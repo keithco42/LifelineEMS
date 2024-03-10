@@ -42,3 +42,9 @@ def cashier(request):
 	context={}
 	
 	return render(request, template_name, context)
+def register(request):
+    
+	template_name = "LifelineEMSapp/register.html"
+	context={}
+	
+	return render(request, template_name, context)
