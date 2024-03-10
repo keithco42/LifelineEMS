@@ -1,0 +1,124 @@
+{% load static %}
+{% block extrahead %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}LifelineEMSapp{% endblock %}</title>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/cashier.css' %}">
+		
+</head>
+	
+<nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container">
+        <img class="round-logo" src={% static 'images/lifelinelogonobg.png' %} >
+        <a href="#" class="navbar-brand">Lifeline.com</a>
+        
+        
+        
+        <div id="main-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                
+                <li><a href="#" class="nav-item nav-link">Pending</a></li>
+                <li><a href="#" class="nav-item nav-link">Students</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<body>
+<header class="header-area overlay"  >
+    
+    <div class="banner">
+<div class="container">
+    <div class="row">
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>DOR</th>
+                                            <th>First Name</th>
+                                            <th>Middle Name</th>
+                                            <th>Last Name</th>
+                                            <th>Email</th>
+                                            <th>Home Address</th>
+                                            <th>Zip Code</th>
+                                            <th>City</th>
+                                            <th>Phone</th>
+                                            <th>Original Receipt</th>
+                                            <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+                <td>02-01-2024</td>
+                <td>Jacob</td>
+                <td>Balatong</td>
+                <td>Mansanas</td>
+                <td>Jacobmansanas@gmail.com</td>
+                <td>2471 taft ave. malate manila city</td>
+                <td>2013</td>
+                <td>Manila City</td>
+                <td>09274214822</td>
+                <td>Photo</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>02-02-2024</td>
+                <td>Emily</td>
+                <td>Grace</td>
+                <td>Johnson</td>
+                <td>emily.johnson@example.com</td>
+                <td>789 Elm St, Smalltown, USA</td>
+                <td>12345</td>
+                <td>Smalltown</td>
+                <td>555-555-1234</td>
+                <td>Photo</td>
+                <td>Approved</td>
+              </tr>
+              <tr>
+                <td>02-03-2024</td>
+                <td>Michael</td>
+                <td>James</td>
+                <td>Smith</td>
+                <td>michael.smith@example.com</td>
+                <td>456 Oak St, Big City, USA</td>
+                <td>67890</td>
+                <td>Big City</td>
+                <td>555-555-5678</td>
+                <td>Photo</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>02-04-2024</td>
+                <td>Amanda</td>
+                <td>Rose</td>
+                <td>Miller</td>
+                <td>amanda.miller@example.com</td>
+                <td>101 Pine St, Mountain Town, USA</td>
+                <td>98765</td>
+                <td>Mountain Town</td>
+                <td>555-555-9012</td>
+                <td>Photo</td>
+                <td>Pending</td>
+              </tr>
+          </tbody>
+        </table>   
+      </div>
+      <div class="col-md-12 text-center">
+      <ul class="pagination pagination-lg pager" id="myPager"></ul>
+      </div>
+	</div>
+</div>
+</div>
+</header>
+</body>
+{% endblock %}
